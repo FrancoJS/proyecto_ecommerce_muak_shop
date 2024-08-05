@@ -1,0 +1,129 @@
+body {
+	background-color: pink;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+/* BARRA DE NAVEGACION */
+
+.header-nav {
+	background-color: #fff;
+	height: 80px;
+	width: 100%;
+	box-shadow: 3px 0px 5px rgb(207, 81, 102);
+}
+
+.container-nav-bar {
+	width: 80%;
+	margin: 0 auto;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-bar {
+	width: 85%;
+}
+
+.nav-products {
+	color: #000;
+	display: flex;
+	align-items: center;
+	/* justify-content: space-between; */
+	list-style: none;
+	font-size: 14px;
+}
+
+.nav-icons {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 15%;
+}
+
+.nav-bar-category {
+	margin-left: 30px;
+}
+/* Hover de products */
+.nav-bar-category:hover {
+	cursor: pointer;
+	border-bottom: 1px solid pink;
+}
+
+/* logo imagen */
+.muak-img {
+	height: 80px;
+}
+
+/* -------------- */
+
+/* LOGIN Y REGISTER */
+
+.container-forms {
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 80px;
+	padding: 40px;
+	display: flex;
+	justify-content: space-around;
+	height: 500px;
+	border-radius: 10px;
+	background-color: #fff;
+	border: 2px solid rgb(217, 112, 129);
+}
+
+.form-login,
+.form-register {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 45%;
+	height: 300px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 22px;
+}
+
+.form-register {
+	height: 460px;
+}
+
+.input-login-register,
+.submit-login-register {
+	padding: 12px 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	border: 1px solid #aaa;
+	outline: none;
+}
+
+.input-login-register:focus {
+	border: 1px solid #000;
+}
+
+.submit-login-register {
+	border: 1px solid pink;
+	background-color: pink;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.submit-login-register:hover {
+	background-color: rgb(207, 81, 102);
+	color: #fff;
+}
+
+hr {
+	background-color: pink;
+	width: 1px;
+
+	border: none;
+}

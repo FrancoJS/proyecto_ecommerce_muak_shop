@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../styles.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>MuakkShop</title>
+	</head>
+	<body>
+		<header class="header-nav">
+			<div class="container-nav-bar">
+				<nav class="nav-bar">
+					<ul class="nav-products">
+						<li>
+							<a href="../index.html"><img class="muak-img" src="../images/muak-logo.png" alt="" /></a>
+						</li>
+						<li class="nav-bar-category">Carteras</li>
+						<li class="nav-bar-category">Pantalones</li>
+						<li class="nav-bar-category">Chaquetas</li>
+						<li class="nav-bar-category">Accesorios</li>
+						<li class="nav-bar-category">Ofertas</li>
+					</ul>
+				</nav>
+				<div class="nav-icons">
+					<a href="#"><img src="../images/favorite_icon.svg" alt="favorite_icon" /></a>
+					<a href="./login-register.html"><img src="../images/user_icon.svg" alt="user_icon" /></a>
+					<a href="#"><img src="../images/shopping_cart.svg" alt="shopping_cart" /></a>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="container-forms">
+				<form action="" class="form-login">
+					<h2>Iniciar sesion con tu cuenta</h2>
+					<!-- <label for="">Nombre</label> -->
+					<input
+						type="email"
+						class="input-login-register"
+						required
+						placeholder="Direccion de correo electronico"
+						name="email"
+						class="input-login-register"
+					/>
+					<input type="password" name="password" required placeholder="Contraseña" class="input-login-register" />
+					<input type="submit" class="submit-login-register" value="INICIAR SESION" />
+				</form>
+				<hr />
+				<form action="" class="form-register">
+					<h2>Crear una cuenta</h2>
+					<input type="text" class="input-login-register" required placeholder="Nombre" name="nombre" />
+					<input type="text" class="input-login-register" required placeholder="Apellidos" name="apellidos" />
+					<input
+						type="email"
+						class="input-login-register"
+						required
+						placeholder="Direccion de correo electronico"
+						name="email"
+					/>
+					<input type="password" class="input-login-register" required placeholder="Contraseña" name="password" />
+					<input type="submit" class="submit-login-register" value="CREAR UNA CUENTA" />
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
