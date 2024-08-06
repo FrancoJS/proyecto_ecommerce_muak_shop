@@ -1,7 +1,7 @@
 import express from "express";
 import { __dirname } from "../server.js";
 import path from "path";
-import { register } from "../controllers/authController.js";
+import { login, register } from "../controllers/authController.js";
 const router = express.Router();
 
 router.get("/", (req, res) => {
@@ -10,5 +10,6 @@ router.get("/", (req, res) => {
 });
 
 router.post("/register", register);
+router.post("/login", login);
 
 export default router;

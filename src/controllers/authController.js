@@ -7,3 +7,8 @@ export const register = async (req, res) => {
 	const hashedPassword = hashPassword(password);
 	console.log(nombre);
 };
+
+export const login = async (req, res) => {
+	const { email, password } = req.body;
+	console.log(email, password);
+};

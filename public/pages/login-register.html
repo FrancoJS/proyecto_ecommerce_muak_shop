@@ -37,32 +37,29 @@
 			</header>
 			<main>
 				<div class="container-forms">
-					<form action="" class="form-login">
+					<form id="form-login" action="auth/login" method="post" class="form-login">
 						<h2>Iniciar sesion</h2>
 						<!-- <label for="">Nombre</label> -->
-						<input
-							type="email"
-							class="input-login"
-							required
-							placeholder="Direccion de correo electronico"
-							name="email"
-							class="input-login"
-						/>
-						<input type="password" name="password" required placeholder="Contraseña" class="input-login" />
+						<input type="email" class="input-login" placeholder="Direccion de correo electronico" name="email" />
+						<span class="error-login error"></span>
+						<input type="password" class="input-login" name="password" placeholder="Contraseña" />
+						<span class="error-login error"></span>
 						<button id="button-login" type="submit" class="submit-login">INICIAR SESION</button>
 					</form>
+
 					<hr />
+
 					<form id="form-register" action="auth/register" method="post" class="form-register">
 						<h2>Crear una cuenta</h2>
 						<input type="text" class="input-register" placeholder="Nombre" name="nombre" />
-						<span class="error-register"></span>
+						<span class="error-register error"></span>
 						<input type="text" class="input-register" placeholder="Apellidos" name="apellidos" />
 						<span class="error-register"></span>
 						<input type="email" class="input-register" placeholder="Direccion de correo electronico" name="email" />
 						<span class="error-register"></span>
-						<input type="password" class="input-register" required placeholder="Contraseña" name="password" />
+						<input type="password" class="input-register" placeholder="Contraseña" name="password" />
 						<span class="error-register"></span>
-						<button id="button-register" type="submit" class="submit-register">CREAR UNA CUENTA</button>
+						<button id="button-register" class="submit-register" type="submit">CREAR UNA CUENTA</button>
 					</form>
 				</div>
 			</main>
@@ -70,6 +67,7 @@
 				<p>Copyright</p>
 			</footer>
 		</div>
-		<script src="../scripts/validateForms.js"></script>
+		<script src="../scripts/validateRegisterForm.js" type="module"></script>
+		<script src="../scripts/validateLoginForm.js" type="module"></script>
 	</body>
 </html>

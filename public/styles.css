@@ -141,7 +141,7 @@ hr {
 }
 
 /* MENSAJES DE ERRORES */
-.error-register {
+.error {
 	font-size: 12px;
 	color: red;
 	position: relative;
