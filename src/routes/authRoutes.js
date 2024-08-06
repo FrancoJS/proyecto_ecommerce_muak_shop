@@ -1,11 +1,14 @@
 import express from "express";
 import { __dirname } from "../server.js";
 import path from "path";
+import { register } from "../controllers/authController.js";
 const router = express.Router();
 
-router.get("/login-register", (req, res) => {
+router.get("/", (req, res) => {
 	const pathLoginRegister = path.join(__dirname, "../public/pages/login-register.html");
 	res.sendFile(pathLoginRegister);
 });
+
+router.post("/register", register);
 
 export default router;

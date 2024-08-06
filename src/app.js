@@ -1,4 +1,4 @@
-import express from "express";
+import express, { urlencoded } from "express";
 import dotenv from "dotenv";
 import { startServer } from "./server.js";
 import authRoutes from "./routes/authRoutes.js";
@@ -16,5 +16,7 @@ const main = () => {
 (async () => {
 	main();
 })();
+
+app.use(express.urlencoded({ extended: true }));
 
 app.use("/auth", authRoutes);

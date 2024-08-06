@@ -9,6 +9,12 @@ body {
 	font-style: normal;
 }
 
+.container {
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+}
+
 /* BARRA DE NAVEGACION */
 
 .header-nav {
@@ -66,16 +72,18 @@ body {
 /* LOGIN Y REGISTER */
 
 .container-forms {
-	width: 55%;
+	min-width: 450px;
+	width: 45%;
 	margin: 0 auto;
 	margin-top: 50px;
 	padding: 40px;
 	display: flex;
 	justify-content: space-around;
-	height: 500px;
+	min-height: 500px;
 	border-radius: 10px;
 	background-color: #fff;
 	border: 2px solid rgb(217, 112, 129);
+	gap: 20px;
 }
 
 .form-login,
@@ -89,31 +97,35 @@ body {
 h2 {
 	text-align: center;
 	font-size: 22px;
-	margin-bottom: 40px;
 }
 
-.input-login-register,
-.submit-login-register {
+.input-login,
+.input-register,
+.submit-login,
+.submit-register {
 	padding: 12px 10px;
 	font-family: "Montserrat", sans-serif;
 	font-weight: 500;
 	border: 1px solid #aaa;
 	outline: none;
-	margin-bottom: 30px;
+	margin-top: 25px;
 }
 
-.input-login-register:focus {
+.input-login:focus,
+.input-register:focus {
 	border: 1px solid #000;
 }
 
-.submit-login-register {
+.submit-login,
+.submit-register {
 	border: 1px solid pink;
 	background-color: pink;
 	font-weight: 600;
 	cursor: pointer;
 }
 
-.submit-login-register:hover {
+.submit-login:hover,
+.submit-register:hover {
 	background-color: rgb(207, 81, 102);
 	color: #fff;
 }
@@ -121,6 +133,18 @@ h2 {
 hr {
 	background-color: pink;
 	width: 1px;
-
 	border: none;
+}
+
+.footer {
+	text-align: center;
+}
+
+/* MENSAJES DE ERRORES */
+.error-register {
+	font-size: 12px;
+	color: red;
+	position: relative;
+	font-weight: 500;
+	display: block;
 }

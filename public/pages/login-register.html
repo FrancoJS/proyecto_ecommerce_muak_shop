@@ -13,59 +13,63 @@
 		<title>MuakkShop</title>
 	</head>
 	<body>
-		<header class="header-nav">
-			<div class="container-nav-bar">
-				<nav class="nav-bar">
-					<ul class="nav-products">
-						<li>
-							<a href="../index.html"><img class="muak-img" src="../images/muak-logo.png" alt="" /></a>
-						</li>
-						<li class="nav-bar-category">Carteras</li>
-						<li class="nav-bar-category">Pantalones</li>
-						<li class="nav-bar-category">Chaquetas</li>
-						<li class="nav-bar-category">Accesorios</li>
-						<li class="nav-bar-category">Ofertas</li>
-					</ul>
-				</nav>
-				<div class="nav-icons">
-					<a href="#"><img src="../images/favorite_icon.svg" alt="favorite_icon" /></a>
-					<a href="./login-register.html"><img src="../images/user_icon.svg" alt="user_icon" /></a>
-					<a href="#"><img src="../images/shopping_cart.svg" alt="shopping_cart" /></a>
+		<div class="container">
+			<header class="header-nav">
+				<div class="container-nav-bar">
+					<nav class="nav-bar">
+						<ul class="nav-products">
+							<li>
+								<a href="/"><img class="muak-img" src="../images/muak-logo.png" alt="" /></a>
+							</li>
+							<li class="nav-bar-category">Carteras</li>
+							<li class="nav-bar-category">Pantalones</li>
+							<li class="nav-bar-category">Chaquetas</li>
+							<li class="nav-bar-category">Accesorios</li>
+							<li class="nav-bar-category">Ofertas</li>
+						</ul>
+					</nav>
+					<div class="nav-icons">
+						<a href="#"><img src="../images/favorite_icon.svg" alt="favorite_icon" /></a>
+						<a href="./auth"><img src="../images/user_icon.svg" alt="user_icon" /></a>
+						<a href="#"><img src="../images/shopping_cart.svg" alt="shopping_cart" /></a>
+					</div>
 				</div>
-			</div>
-		</header>
-		<main>
-			<div class="container-forms">
-				<form action="" class="form-login">
-					<h2>Iniciar sesion con tu cuenta</h2>
-					<!-- <label for="">Nombre</label> -->
-					<input
-						type="email"
-						class="input-login-register"
-						required
-						placeholder="Direccion de correo electronico"
-						name="email"
-						class="input-login-register"
-					/>
-					<input type="password" name="password" required placeholder="Contraseña" class="input-login-register" />
-					<input type="submit" class="submit-login-register" value="INICIAR SESION" />
-				</form>
-				<hr />
-				<form action="" class="form-register">
-					<h2>Crear una cuenta</h2>
-					<input type="text" class="input-login-register" required placeholder="Nombre" name="nombre" />
-					<input type="text" class="input-login-register" required placeholder="Apellidos" name="apellidos" />
-					<input
-						type="email"
-						class="input-login-register"
-						required
-						placeholder="Direccion de correo electronico"
-						name="email"
-					/>
-					<input type="password" class="input-login-register" required placeholder="Contraseña" name="password" />
-					<input type="submit" class="submit-login-register" value="CREAR UNA CUENTA" />
-				</form>
-			</div>
-		</main>
+			</header>
+			<main>
+				<div class="container-forms">
+					<form action="" class="form-login">
+						<h2>Iniciar sesion</h2>
+						<!-- <label for="">Nombre</label> -->
+						<input
+							type="email"
+							class="input-login"
+							required
+							placeholder="Direccion de correo electronico"
+							name="email"
+							class="input-login"
+						/>
+						<input type="password" name="password" required placeholder="Contraseña" class="input-login" />
+						<button id="button-login" type="submit" class="submit-login">INICIAR SESION</button>
+					</form>
+					<hr />
+					<form id="form-register" action="auth/register" method="post" class="form-register">
+						<h2>Crear una cuenta</h2>
+						<input type="text" class="input-register" placeholder="Nombre" name="nombre" />
+						<span class="error-register"></span>
+						<input type="text" class="input-register" placeholder="Apellidos" name="apellidos" />
+						<span class="error-register"></span>
+						<input type="email" class="input-register" placeholder="Direccion de correo electronico" name="email" />
+						<span class="error-register"></span>
+						<input type="password" class="input-register" required placeholder="Contraseña" name="password" />
+						<span class="error-register"></span>
+						<button id="button-register" type="submit" class="submit-register">CREAR UNA CUENTA</button>
+					</form>
+				</div>
+			</main>
+			<footer class="footer">
+				<p>Copyright</p>
+			</footer>
+		</div>
+		<script src="../scripts/validateForms.js"></script>
 	</body>
 </html>
