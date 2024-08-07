@@ -3,9 +3,11 @@ import dotenv from "dotenv";
 import { startServer } from "./server.js";
 import authRoutes from "./routes/authRoutes.js";
 import salesRoute from "./routes/salesRoute.js";
+import connectDB from "./config/database.js";
 
 dotenv.config();
 export const app = express();
+connectDB();
 
 const main = () => {
 	startServer({
