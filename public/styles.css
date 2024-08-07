@@ -1,5 +1,5 @@
 body {
-	background-color: pink;
+	background-color: rgb(254, 217, 223);
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
@@ -56,6 +56,11 @@ body {
 .nav-bar-category {
 	margin-left: 30px;
 }
+
+.nav-bar-category a {
+	text-decoration: none;
+	color: #000;
+}
 /* Hover de products */
 .nav-bar-category:hover {
 	cursor: pointer;
@@ -105,7 +110,7 @@ h2 {
 .submit-register {
 	padding: 12px 10px;
 	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 	border: 1px solid #aaa;
 	outline: none;
 	margin-top: 25px;
@@ -138,6 +143,7 @@ hr {
 
 .footer {
 	text-align: center;
+	background-color: #fff;
 }
 
 /* MENSAJES DE ERRORES */
@@ -147,4 +153,71 @@ hr {
 	position: relative;
 	font-weight: 500;
 	display: block;
+}
+
+/* Productos */
+
+.section-products {
+	width: 60%;
+	margin: 50px auto 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	row-gap: 30px;
+	column-gap: 10px;
+}
+
+.product-card {
+	height: 350px;
+	width: 220px;
+	object-fit: contain;
+	background-color: #fff;
+	text-align: center;
+	border: 1px solid #bbb;
+}
+
+.product-card:hover {
+	transition: all 0.1s ease-in;
+	box-shadow: 2px 2px 5px 1px rgb(207, 81, 102);
+	cursor: pointer;
+}
+
+.product-img {
+	background-color: #fff;
+	width: 45%;
+	height: 50%;
+	object-fit: contain;
+}
+
+.product-title {
+	font-size: 14px;
+	align-items: ;
+}
+
+.addCart {
+	padding: 10px 10px;
+	background-color: #000;
+	color: #fff;
+	font-family: "Montserrat", sans-serif;
+	outline: none;
+	font-weight: 600;
+	font-size: 12px;
+	cursor: pointer;
+	border: 1px solid #000;
+}
+
+.addCart:hover {
+	opacity: 70%;
+}
+
+.product-price {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.product-separator {
+	width: 80%;
+	margin: 0 auto;
+	height: 1px;
+	background-color: #444;
+	margin-top: 30px;
 }

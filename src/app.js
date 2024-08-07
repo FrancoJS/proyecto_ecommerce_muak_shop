@@ -2,6 +2,7 @@ import express, { urlencoded } from "express";
 import dotenv from "dotenv";
 import { startServer } from "./server.js";
 import authRoutes from "./routes/authRoutes.js";
+import salesRoute from "./routes/salesRoute.js";
 
 dotenv.config();
 export const app = express();
@@ -20,3 +21,4 @@ const main = () => {
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/auth", authRoutes);
+app.use("/shop", salesRoute);

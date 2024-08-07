@@ -1,7 +1,7 @@
 const buttonRegister = document.getElementById("button-register");
 const formRegister = document.getElementById("form-register");
 const inputsRegister = document.querySelectorAll(".input-register");
-const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+export const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const errorArrRegister = document.querySelectorAll(".error-register");
 const [errorName, errorApellidos, errorEmail, errorPassword] = errorArrRegister;
 const [nombre, apellidos, email, password] = inputsRegister;
@@ -13,7 +13,7 @@ buttonRegister.addEventListener("click", (e) => {
 	const emailValue = email.value.trim();
 	const passwordValue = password.value.trim();
 	let isValid = true;
-	s;
+
 	if (!nombreValue) {
 		errorName.textContent = 'El "Nombre" es un campo obligatorio';
 		isValid = false;
@@ -96,5 +96,3 @@ password.addEventListener("input", (e) => {
 });
 
 //TODO REFACTORIZAR CODIGO
-
-export default emailRegex;
