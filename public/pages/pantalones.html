@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="../styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -19,7 +19,7 @@
 					<nav class="nav-bar">
 						<ul class="nav-products">
 							<li>
-								<a href="/"><img class="muak-img" src="./images/muak-logo.png" alt="" /></a>
+								<a href="/"><img class="muak-img" src="../images/muak-logo.png" alt="" /></a>
 							</li>
 							<li class="nav-bar-category"><a href="/shop/pants">Pantalones</a></li>
 							<li class="nav-bar-category"><a href="/shop/skirt">Faldas</a></li>
@@ -27,16 +27,19 @@
 						</ul>
 					</nav>
 					<div class="nav-icons">
-						<a href="#"><img src="./images/favorite_icon.svg" alt="favorite_icon" /></a>
-						<a href="/auth"><img src="./images/user_icon.svg" alt="user_icon" /></a>
-						<a href="#"><img src="./images/shopping_cart.svg" alt="shopping_cart" /></a>
+						<a href="#"><img src="../images/favorite_icon.svg" alt="favorite_icon" /></a>
+						<a href="/auth"><img src="../images/user_icon.svg" alt="user_icon" /></a>
+						<a href="#"><img src="../images/shopping_cart.svg" alt="shopping_cart" /></a>
 					</div>
 				</div>
 			</header>
-			<main></main>
+			<main>
+				<section id="section-products-pants" class="section-products"></section>
+			</main>
 			<footer class="footer">
 				<p>Copyright</p>
 			</footer>
 		</div>
+		<script src="../scripts/getAllPantsProducts.js" type="module"></script>
 	</body>
 </html>
